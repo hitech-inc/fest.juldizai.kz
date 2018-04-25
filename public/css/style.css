@@ -1,0 +1,1719 @@
+/*
+Theme Name: EXO | Event Landing page Template
+Author: HTML BEANS
+Author URI: https://themeforest.net/user/htmlbeans
+Version: 1
+Description: Base theme for HTML5
+Text Domain: base
+Tags: one-column, two-columns, three-columns
+Theme URI: http://www.htmlbeans.com/demos/exo/
+*/
+/*------------------------------------------------------------------
+
+1. import files / import files
+2. Body / body
+3. Wrapper / #wrapper
+4. Header / #header
+5. Logo / .logo
+6. Nav / #nav
+7. Nav Active / .nav-active
+8. Main / #main
+9. Btn Primary / .btn-primary
+10. Banner / .banner
+11. Info Holder / .info-holder
+12. Abt Holder / .abt-holder
+13. Heading / .heading
+14. Header / .header
+15. Heading2 / .heading2
+16. Speaker Sec / .speaker-sec
+17. Cta Sec / .cta-sec
+18. Schedule Sec / .schedule-sec
+19. Gallery Holder / .gallery-holder
+20. Price Sec / .price-sec
+21. Register Sec / .register-sec
+22. Footer / #footer
+23. Back Top / #back-top
+24. Loader Holder / .loader-holder
+
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+1. import files / import files
+-------------------------------------------------------------------*/
+#wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.clearfix:after, .speaker-sec .speaker-slider:after, .speaker-sec .speaker-slider .speaker-col:after, .schedule-sec .schedule-tab li:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.ellipsis {
+  white-space: nowrap;
+  /* 1 */
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  /* 2 */
+  overflow: hidden;
+}
+
+/*------------------------------------------------------------------
+2. Body / body
+-------------------------------------------------------------------*/
+body {
+  font-weight: 400;
+  margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.pattern1 {
+  background-image: url(images/patterns/pattern1.png);
+}
+
+body.pattern2 {
+  background-image: url(images/patterns/pattern2.png);
+}
+
+body.pattern3 {
+  background-image: url(images/patterns/pattern3.png);
+}
+
+body.pattern4 {
+  background-image: url(images/patterns/pattern4.png);
+}
+
+body.pattern5 {
+  background-image: url(images/patterns/pattern5.png);
+}
+
+body.pattern6 {
+  background-image: url(images/patterns/pattern6.png);
+}
+
+body.pattern7 {
+  background-image: url(images/patterns/pattern7.png);
+}
+
+body.pattern8 {
+  background-image: url(images/patterns/pattern8.png);
+}
+
+body.pattern9 {
+  background-image: url(images/patterns/pattern9.png);
+}
+
+body.pattern10 {
+  background-image: url(images/patterns/pattern10.png);
+}
+
+body.pattern11 {
+  background-image: url(images/patterns/pattern11.png);
+}
+
+body.pattern12 {
+  background-image: url(images/patterns/pattern12.png);
+}
+
+body.pattern13 {
+  background-image: url(images/patterns/pattern13.png);
+}
+
+body.pattern14 {
+  background-image: url(images/patterns/pattern14.png);
+}
+
+body.boxed-v #wrapper {
+  max-width: 80%;
+  margin: 20px auto;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+a:hover, a:focus, a.active {
+  text-decoration: none;
+  outline: none;
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.overlay:before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(34, 49, 63, 0.8);
+}
+
+.bg-full {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.round {
+  border-radius: 100%;
+}
+
+.md-round {
+  border-radius: 3px;
+}
+
+.lg-round {
+  border-radius: 45px;
+}
+
+.mar-top-xs {
+  margin-top: 30px !important;
+}
+
+.mar-top-sm {
+  margin-top: 60px !important;
+}
+
+.mar-top-md {
+  margin-top: 90px !important;
+}
+
+.pad-top-xs {
+  padding-top: 30px !important;
+}
+
+.pad-top-sm {
+  padding-top: 60px !important;
+}
+
+.pad-top-md {
+  padding-top: 90px !important;
+}
+
+.mar-top-lg {
+  margin-top: 120px !important;
+}
+
+.pad-top-lg {
+  padding-top: 120px !important;
+}
+
+.mar-bottom-xs {
+  margin-bottom: 30px !important;
+}
+
+.mar-bottom-sm {
+  margin-bottom: 60px !important;
+}
+
+.mar-bottom-md {
+  margin-bottom: 90px !important;
+}
+
+.pad-bottom-sm {
+  padding-bottom: 60px !important;
+}
+
+.pad-bottom-xs {
+  padding-bottom: 30px !important;
+}
+
+.pad-bottom-md {
+  padding-bottom: 90px !important;
+}
+
+.mar-bottom-lg {
+  margin-bottom: 120px !important;
+}
+
+.pad-bottom-lg {
+  padding-bottom: 120px !important;
+}
+
+.js-tab-hidden {
+  display: block !important;
+  left: -9999px !important;
+  position: absolute !important;
+  top: -9999px !important;
+}
+
+/*------------------------------------------------------------------
+3. Wrapper / #wrapper
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+4. Header / #header
+-------------------------------------------------------------------*/
+#header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  padding: 48px 0 0;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+#header.sticky {
+  padding: 15px 0;
+  position: absolute;
+  background: #22313f;
+  height: auto !important;
+}
+
+#header .nav-holder {
+  width: 80%;
+  float: right;
+}
+
+#header .btn-primary {
+  float: right;
+}
+
+#header .nav-opener {
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 7px 10px 6px;
+  margin: 6px 0 0;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+#header .nav-opener .fa-times {
+  display: none;
+}
+
+/*------------------------------------------------------------------
+5. Logo / .logo
+-------------------------------------------------------------------*/
+.logo {
+  width: 78px;
+  float: left;
+  margin: 8px 10px 0 0;
+}
+
+/*------------------------------------------------------------------
+6. Nav / #nav
+-------------------------------------------------------------------*/
+#nav {
+  font: 16px/18px "Dosis", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  color: #fff;
+  padding: 9px 0 0;
+  margin: 0 30px 0 0;
+  overflow: hidden;
+  float: right;
+}
+
+#nav ul {
+  overflow: hidden;
+  margin: 0;
+}
+
+#nav ul li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 0 25px;
+}
+
+#nav ul li:first-child {
+  margin: 0;
+}
+
+#nav ul a {
+  color: #fff;
+  display: block;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+/*------------------------------------------------------------------
+7. Nav Active / .nav-active
+-------------------------------------------------------------------*/
+.nav-active #header .nav-opener .fa-bars {
+  display: none;
+}
+
+.nav-active #header .nav-opener .fa-times {
+  display: inline-block;
+}
+
+.nav-active #nav {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*------------------------------------------------------------------
+8. Main / #main
+-------------------------------------------------------------------*/
+#main {
+  overflow: hidden;
+}
+
+/*------------------------------------------------------------------
+9. Btn Primary / .btn-primary
+-------------------------------------------------------------------*/
+.btn-primary {
+  font: 12px/14px "proxima_novabold";
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fff;
+  padding: 5px 18px 5px 5px;
+  background: none;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.btn-primary:hover .icofont {
+  background: #fff;
+}
+
+.btn-primary .icofont {
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 7px 15px;
+  margin: 0 12px 0 0;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+/*------------------------------------------------------------------
+10. Banner / .banner
+-------------------------------------------------------------------*/
+.banner {
+  white-space: nowrap;
+  text-align: center;
+}
+
+.banner:after {
+  content: '';
+  display: inline-block;
+  vertical-align: bottom;
+  width: 0;
+  min-height: 100vh;
+}
+
+.banner > * {
+  white-space: normal;
+  display: inline-block;
+  vertical-align: bottom;
+  max-width: 99%;
+}
+
+.banner.banner2:after,
+.banner.banner2 > * {
+  vertical-align: middle;
+}
+
+.banner.banner2 .caption {
+  padding: 0;
+}
+
+.banner.banner2 p {
+  margin: 0 0 50px;
+}
+
+.banner .slide:after,
+.banner .slide > * {
+  vertical-align: middle;
+}
+
+.banner .slide .caption {
+  padding: 0;
+}
+
+.banner .slide p {
+  margin: 0 0 50px;
+}
+
+.banner .caption {
+  font-size: 22px;
+  line-height: 32px;
+  color: #fff;
+  overflow: hidden;
+  padding: 0 0 106px;
+}
+
+.banner h1 {
+  font-size: 48px;
+  line-height: 50px;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 21px;
+}
+
+.banner p {
+  margin: 0 0 125px;
+}
+
+.banner .comming-timer {
+  overflow: hidden;
+  padding: 0 0 22px;
+  margin: 0 0 21px;
+  position: relative;
+}
+
+.banner .comming-timer:before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  left: 50%;
+  top: auto;
+  bottom: 0;
+  right: auto;
+  background: #fff;
+  width: 50px;
+  height: 1px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.banner .countdown-section {
+  margin: 0 30px 0 0;
+}
+
+.banner .countdown-section .countdown-amount,
+.banner .countdown-section .countdown-period {
+  font: 24px/26px "Dosis", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+.banner .video-icon {
+  font: 13px/16px "Dosis", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-weight: 700;
+  width: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+.banner .video-icon .icofont {
+  font-size: 71px;
+  line-height: 71px;
+  color: #fff;
+  display: block;
+  margin: 0 0 17px;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.main-slider {
+  overflow: hidden;
+}
+
+.main-slider .slide {
+  white-space: nowrap;
+  text-align: center;
+}
+
+.main-slider .slide:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  min-height: 100vh;
+}
+
+.main-slider .slide > * {
+  white-space: normal;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 99%;
+}
+
+.main-slider .caption {
+  font-size: 22px;
+  line-height: 32px;
+  color: #fff;
+  overflow: hidden;
+}
+
+.main-slider h1 {
+  font: 48px/50px "Dosis", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 21px;
+}
+
+.main-slider p {
+  margin: 0 0 50px;
+}
+
+.main-slider .slick-prev,
+.main-slider .slick-next {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  text-indent: -9999px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fff;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  overflow: hidden;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.main-slider .slick-prev:before,
+.main-slider .slick-next:before {
+  position: absolute;
+  left: 8px;
+  top: 9px;
+  content: "\eb8a";
+  font-family: 'icofont';
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #22313f;
+  text-indent: 0;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.main-slider .slick-prev:hover:before,
+.main-slider .slick-next:hover:before {
+  color: #fff;
+}
+
+.main-slider .slick-prev {
+  left: 0;
+}
+
+.main-slider .slick-next {
+  right: 0;
+}
+
+.main-slider .slick-next:before {
+  content: "\eb8b";
+}
+
+#bgvid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  z-index: -100;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: url("images/polina.jpg") no-repeat;
+  background-size: cover;
+  -webkit-transition: 1s opacity;
+  -o-transition: 1s opacity;
+  transition: 1s opacity;
+}
+
+/*------------------------------------------------------------------
+11. Info Holder / .info-holder
+-------------------------------------------------------------------*/
+.info-holder {
+  overflow: hidden;
+  margin-top: -34px;
+  position: relative;
+  z-index: 1;
+}
+
+.info-holder.style2 {
+  margin-top: 0;
+  padding-top: 80px;
+}
+
+.info-holder .col {
+  padding: 26px 20px 30px 51px;
+}
+
+.info-holder .icofont {
+  font-size: 30px;
+  line-height: 35px;
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 13px 0 0;
+}
+
+.info-holder .border {
+  font-size: 23px;
+  line-height: 30px;
+  color: #fff;
+  padding: 3px 0 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.info-holder .align-right {
+  padding: 0 0 0 16px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.info-holder strong {
+  font: 14px/16px "Dosis", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  display: block;
+  margin: 0 0 10px;
+}
+
+.info-holder .date,
+.info-holder .address {
+  font: 16px/18px "Dosis", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #fff;
+  display: block;
+  margin: 0;
+}
+
+/*------------------------------------------------------------------
+12. Abt Holder / .abt-holder
+-------------------------------------------------------------------*/
+.abt-holder {
+  overflow: hidden;
+  padding-top: 107px;
+  padding-bottom: 65px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.abt-holder .holder {
+  width: 360px;
+}
+
+.abt-holder .tabset {
+  font: 14px/16px "Dosis", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #acacac;
+  font-weight: 700;
+  overflow: hidden;
+  margin: 0 0 49px;
+}
+
+.abt-holder .tabset li {
+  float: left;
+  word-spacing: 3px;
+}
+
+.abt-holder .tabset a {
+  padding: 0 21px 12px;
+  display: block;
+  color: #acacac;
+  border-width: 0 0 3px;
+  border-style: solid;
+  border-color: #e8e8e8;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.abt-holder .topic-list {
+  overflow: hidden;
+  margin: 0;
+}
+
+.abt-holder .topic-list li {
+  overflow: hidden;
+  margin: 0 0 40px;
+}
+
+.abt-holder .topic-list .icon {
+  width: 48px;
+  height: 48px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #22313f;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #22313f;
+  float: left;
+  padding: 12px 10px;
+  margin: 3px 0 0;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.abt-holder .topic-list .txt-holder {
+  float: left;
+  width: 80%;
+  padding: 0 0 0 21px;
+}
+
+.abt-holder .topic-list p {
+  margin: 0;
+}
+
+.abt-holder .img-holder {
+  width: 100%;
+}
+
+.abt-holder .abt-slider {
+  overflow: hidden;
+}
+
+.abt-holder .abt-slider .slide:before {
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.abt-holder .abt-slider .slick-prev,
+.abt-holder .abt-slider .slick-next {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  text-indent: -9999px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #22313f;
+  width: 31px;
+  height: 31px;
+  background: #22313f;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  overflow: hidden;
+  border-radius: 5px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.abt-holder .abt-slider .slick-prev:before,
+.abt-holder .abt-slider .slick-next:before {
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  content: "\eb8a";
+  font-family: 'icofont';
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #fff;
+  text-indent: 0;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.abt-holder .abt-slider .slick-prev {
+  left: 30px;
+}
+
+.abt-holder .abt-slider .slick-next {
+  right: 0;
+}
+
+.abt-holder .abt-slider .slick-next:before {
+  content: "\eb8b";
+}
+
+.abt-holder .btn-primary {
+  margin: 10px 0 0;
+  color: #22313f;
+  border-color: #22313f;
+}
+
+.abt-holder .btn-primary:hover {
+  color: #fff;
+}
+
+/*------------------------------------------------------------------
+13. Heading / .heading
+-------------------------------------------------------------------*/
+.heading {
+  font: 16px/18px "Dosis", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #22313f;
+  margin: 0 0 14px;
+}
+
+/*------------------------------------------------------------------
+14. Header / .header
+-------------------------------------------------------------------*/
+.header {
+  overflow: hidden;
+  margin: 0 0 59px;
+}
+
+.header .title {
+  font: 18px/20px "Dosis", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  display: block;
+  margin: 0 0 13px;
+  word-spacing: 4px;
+}
+
+/*------------------------------------------------------------------
+15. Heading2 / .heading2
+-------------------------------------------------------------------*/
+.heading2 {
+  font: 30px/32px "Dosis", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #22313f;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/*------------------------------------------------------------------
+16. Speaker Sec / .speaker-sec
+-------------------------------------------------------------------*/
+.speaker-sec {
+  overflow: hidden;
+  padding-top: 103px;
+  padding-bottom: 110px;
+}
+
+.speaker-sec .speaker-slider .slide {
+  overflow: hidden;
+}
+
+.speaker-sec .speaker-slider .slide .col {
+  width: 34.09%;
+  padding: 0 29px 0 0;
+  float: left;
+}
+
+.speaker-sec .speaker-slider .slide .col:nth-child(3) {
+  padding: 0;
+  width: 31.8%;
+}
+
+.speaker-sec .speaker-slider .speaker-col {
+  border: 2px solid #eeeff0;
+  z-index: 1;
+  position: relative;
+  padding: 18px 10px 19px 18px;
+}
+
+.speaker-sec .speaker-slider .speaker-col:first-child {
+  margin: 0 0 29px;
+}
+
+.speaker-sec .speaker-slider .speaker-col:before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  left: -2px;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  width: 2px;
+  height: 59px;
+  background: #bcc5ce;
+  z-index: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.speaker-sec .speaker-slider .img-holder {
+  width: 25%;
+  float: left;
+  overflow: hidden;
+}
+
+.speaker-sec .speaker-slider .txt-holder {
+  width: 75%;
+  float: left;
+  padding: 7px 0 0 27px;
+  position: relative;
+  z-index: 1;
+}
+
+.speaker-sec .speaker-slider .txt-holder:after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  left: auto;
+  top: 50%;
+  bottom: auto;
+  right: -11px;
+  width: 2px;
+  height: 59px;
+  background: #bcc5ce;
+  z-index: 0;
+  margin: 5px 0 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.speaker-sec .speaker-slider h4 {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #22313f;
+  margin: 0 0 10px;
+  letter-spacing: 1px;
+}
+
+.speaker-sec .speaker-slider h4 a {
+  color: #22313f;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.speaker-sec .speaker-slider .skill {
+  font: 12px/14px "proxima_novalight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #5c6a77;
+  display: block;
+  margin: 0 0 16px;
+}
+
+.speaker-sec .speaker-slider .topic {
+  font: 12px/14px "proxima_novalight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  color: #22313f;
+  display: block;
+}
+
+.speaker-sec .speaker-slider .slick-prev,
+.speaker-sec .speaker-slider .slick-next {
+  position: absolute;
+  right: 40px;
+  top: -100px;
+  text-indent: -9999px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #22313f;
+  width: 31px;
+  height: 31px;
+  background: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  overflow: hidden;
+  border-radius: 5px;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.speaker-sec .speaker-slider .slick-prev:before,
+.speaker-sec .speaker-slider .slick-next:before {
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  content: "\eb8a";
+  font-family: 'icofont';
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #22313f;
+  text-indent: 0;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.speaker-sec .speaker-slider .slick-next {
+  right: 0;
+}
+
+.speaker-sec .speaker-slider .slick-next:before {
+  content: "\eb8b";
+}
+
+/*------------------------------------------------------------------
+17. Cta Sec / .cta-sec
+-------------------------------------------------------------------*/
+.cta-sec {
+  min-height: 220px;
+  padding: 71px 0 62px;
+  font-family: 'proxima_nova_rgregular';
+  color: #fff;
+}
+
+.cta-sec p {
+  margin: 0;
+}
+
+.cta-sec .title {
+  font: 28px/30px "Dosis", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin: 0 0 10px;
+  display: block;
+  letter-spacing: 1px;
+}
+
+.cta-sec .video-holder {
+  overflow: hidden;
+  margin: 34px auto 0;
+}
+
+.cta-sec .video-holder .arrow-img {
+  width: 273px;
+  margin: 0 auto;
+  min-height: 21px;
+  background-size: cover;
+  background-position: 50%, 50%;
+}
+
+.cta-sec .video {
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+  display: block;
+  padding: 0 0 0 19px;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.cta-sec .video .icofont {
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.cta-sec .btn-primary {
+  float: right;
+  margin: 25px 0 0;
+}
+
+/*------------------------------------------------------------------
+18. Schedule Sec / .schedule-sec
+-------------------------------------------------------------------*/
+.schedule-sec {
+  overflow: hidden;
+  padding-top: 103px;
+  padding-bottom: 55px;
+}
+
+.schedule-sec .schedule-holder {
+  overflow: hidden;
+  min-height: 385px;
+  padding: 49px 49px 42px;
+}
+
+.schedule-sec .schedule-tab {
+  overflow: hidden;
+  margin: 0;
+  width: 21.9%;
+  float: left;
+  padding: 0 44px 0 0;
+}
+
+.schedule-sec .schedule-tab li {
+  margin: 0 0 11px;
+}
+
+.schedule-sec .schedule-tab .day {
+  font: 12px/14px "Dosis", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #919aa3;
+  font-weight: 700;
+  display: block;
+  margin: 0 0 6px;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.schedule-sec .schedule-tab .time {
+  font: 16px/18px "Dosis", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #22313f;
+  font-weight: 700;
+  display: block;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.schedule-sec .schedule-tab .active:before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.schedule-sec .schedule-tab .active .day,
+.schedule-sec .schedule-tab .active .time {
+  color: #fff;
+}
+
+.schedule-sec .schedule-tab a {
+  padding: 11px 10px 14px 19px;
+  background: #fff;
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.schedule-sec .schedule-tab a:before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  left: auto;
+  top: 50%;
+  bottom: auto;
+  right: -10px;
+  opacity: 0;
+  visibility: hidden;
+  border-style: solid;
+  border-width: 10px 0 10px 12px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.schedule-sec .schedule-tab a:hover .day,
+.schedule-sec .schedule-tab a:hover .time {
+  color: #fff;
+}
+
+.schedule-sec .tab-content {
+  width: 78.1%;
+  float: left;
+  padding: 26px 33px 35px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.schedule-sec .tab-content.content2 {
+  width: 100%;
+  float: none;
+  padding: 0;
+}
+
+.schedule-sec .time-tab {
+  font: 12px/14px "Dosis", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #acacac;
+  font-weight: 700;
+  overflow: hidden;
+  margin: 0 0 35px;
+}
+
+.schedule-sec .time-tab li {
+  float: left;
+  word-spacing: 2px;
+}
+
+.schedule-sec .time-tab a {
+  padding: 0 12px 11px;
+  display: block;
+  color: #acacac;
+  border-width: 0 0 3px;
+  border-style: solid;
+  border-color: #e8e8e8;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.schedule-sec .content2 .img-holder {
+  width: 26.1%;
+  float: left;
+}
+
+.schedule-sec .content2 .txt-holder {
+  color: #7f8c97;
+  width: 64%;
+  float: left;
+  padding: 9px 0 0 35px;
+}
+
+.schedule-sec .content2 .txt-holder p {
+  margin: 0;
+}
+
+.schedule-sec .content2 .heading {
+  margin: 0 0 13px;
+  word-spacing: 5px;
+}
+
+.schedule-sec .content2 .txt-list {
+  font: 13px/ 15px "proxima_nova_rgregular";
+  color: #7f8c97;
+  overflow: hidden;
+  margin: 0 0 23px;
+}
+
+.schedule-sec .content2 .txt-list li {
+  float: left;
+  margin: 0 14px 0 0;
+}
+
+.schedule-sec .content2 .txt-list .icofont {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 7px 0 0;
+}
+
+.schedule-sec .content2 .txt-list a {
+  color: #7f8c97;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+/*------------------------------------------------------------------
+19. Gallery Holder / .gallery-holder
+-------------------------------------------------------------------*/
+.gallery-holder {
+  padding-top: 55px;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+.gallery-holder .grid-item {
+  overflow: hidden;
+}
+
+.gallery-holder .grid-item:hover:before {
+  left: 7px;
+  top: 7px;
+  right: 7px;
+  bottom: 7px;
+  opacity: 0.95;
+  visibility: visible;
+}
+
+.gallery-holder .grid-item:hover .icon {
+  opacity: 1;
+  visibility: visible;
+}
+
+.gallery-holder .grid-item:before {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 0;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.gallery-holder .grid-item .icon {
+  font-size: 30px;
+  line-height: 45px;
+  color: #fff;
+  font-weight: 300;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.gallery-holder .grid-item.item1 {
+  width: 292px;
+  float: left;
+}
+
+.gallery-holder .grid-item.item2 {
+  width: 586px;
+  float: left;
+}
+
+.gallery-holder .grid-item.item3 {
+  width: 408px;
+  float: left;
+}
+
+.gallery-holder .grid-item.item4 {
+  width: 241px;
+  float: left;
+}
+
+.gallery-holder .grid-item.item5 {
+  width: 229px;
+  float: left;
+}
+
+/*------------------------------------------------------------------
+20. Price Sec / .price-sec
+-------------------------------------------------------------------*/
+.price-sec {
+  padding-top: 51px;
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+
+.price-sec .header {
+  margin: 0 0 61px;
+}
+
+.price-sec .price-holder {
+  font: 15px/ 17px 'proxima_novasemibold';
+  color: #22313f;
+  overflow: hidden;
+  margin: 0 0 30px;
+  border: 1px solid #e7e7e7;
+}
+
+.price-sec .price-holder li {
+  overflow: hidden;
+  padding: 18px 10px 13px;
+}
+
+.price-sec .price-holder li:nth-child(2n+2) {
+  background: #f6f6f6;
+}
+
+.price-sec .price-holder .price-heading {
+  padding: 0;
+  background: #22313f !important;
+}
+
+.price-sec .price-holder .price-heading .price {
+  font: 30px/35px "Dosis", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  padding: 15px 32px 17px 29px;
+  margin: 0 30px 0 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.price-sec .price-holder .price-heading .heading {
+  color: #fff;
+  margin: 0;
+  word-spacing: 1px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.price-sec .price-holder .btn-primary {
+  border: none;
+  padding: 8px 29px 6px 7px;
+  background: #22313f;
+}
+
+.price-sec .price-holder .btn-primary .icofont {
+  margin: 0 25px 0 0;
+}
+
+.price-sec .price-holder .btn-primary:hover .icofont {
+  color: #fff;
+  background: #22313f;
+}
+
+/*------------------------------------------------------------------
+21. Register Sec / .register-sec
+-------------------------------------------------------------------*/
+.register-sec {
+  padding: 103px 0;
+  min-height: 368px;
+}
+
+.register-sec .header {
+  margin: 0 0 46px;
+}
+
+.register-sec .heading2 {
+  color: #fff;
+}
+
+.register-sec .register-form {
+  overflow: hidden;
+}
+
+.register-sec .register-form .col {
+  width: 18.5%;
+  height: 44px;
+  float: left;
+  overflow: hidden;
+  margin: 0 12px 0 0;
+  padding: 10px 10px 10px 19px;
+  border: 2px solid #fff;
+}
+
+.register-sec .register-form label {
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  float: left;
+  width: 13%;
+  padding: 2px 0 0;
+}
+
+.register-sec .register-form .form-control {
+  font: 12px/14px 'proxima_novabold';
+  color: #fff;
+  width: 87%;
+  height: 100%;
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.register-sec .register-form .form-control::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.register-sec .register-form .form-control::-moz-placeholder {
+  opacity: 1;
+  color: #fff;
+}
+
+.register-sec .register-form .form-control:-moz-placeholder {
+  color: #fff;
+}
+
+.register-sec .register-form .form-control:-ms-input-placeholder {
+  color: #fff;
+}
+
+.register-sec .register-form .form-control.placeholder {
+  color: #fff;
+}
+
+.register-sec .register-form .jcf-select {
+  min-width: 87%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  margin: 0 -4px 0 0;
+  float: left;
+}
+
+.register-sec .register-form .jcf-select .jcf-select-text {
+  font: 12px/14px 'proxima_novabold';
+  color: #fff;
+  padding: 3px 0 0;
+  text-transform: uppercase;
+}
+
+.register-sec .register-form .jcf-select .jcf-select-opener {
+  background: none;
+}
+
+.register-sec .register-form .jcf-select .jcf-select-opener:before {
+  position: absolute;
+  content: "\eb25";
+  font-family: 'icofont';
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+  right: 4px;
+  top: 3px;
+}
+
+.register-sec .register-form .btn-primary {
+  padding: 5px 17px 5px 5px;
+  color: #22313f;
+  word-spacing: 3px;
+  background: #fff;
+}
+
+.register-sec .register-form .btn-primary:hover {
+  color: #fff;
+}
+
+/*------------------------------------------------------------------
+22. Footer / #footer
+-------------------------------------------------------------------*/
+#footer {
+  overflow: hidden;
+}
+
+#footer .footer-area {
+  padding-top: 100px;
+  padding-bottom: 61px;
+  overflow: hidden;
+  font: 15px/24px 'proxima_nova_rgregular';
+  color: #22313f;
+}
+
+#footer .footer-area p {
+  margin: 0 0 16px;
+}
+
+#footer .logo {
+  margin: 0 auto 26px;
+  float: none;
+}
+
+#footer .contact-list {
+  font: 15px/17px "Dosis", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #3a4855;
+  font-weight: 700;
+  overflow: hidden;
+  margin: 0 0 28px;
+}
+
+#footer .contact-list li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 20px 0 0;
+}
+
+#footer .contact-list .icofont {
+  float: left;
+  margin: 0 20px 0 0;
+}
+
+#footer .contact-list a {
+  color: #3a4855;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+#footer .newsletter-form {
+  width: 430px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto 23px;
+}
+
+#footer .newsletter-form .form-control {
+  font: 15px/24px 'proxima_nova_rgregular';
+  color: #fff;
+  width: 100%;
+  height: 60px;
+  background: #3a4855;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 10px 90px 10px 26px;
+}
+
+#footer .newsletter-form .form-control::-webkit-input-placeholder {
+  color: #fff;
+}
+
+#footer .newsletter-form .form-control::-moz-placeholder {
+  opacity: 1;
+  color: #fff;
+}
+
+#footer .newsletter-form .form-control:-moz-placeholder {
+  color: #fff;
+}
+
+#footer .newsletter-form .form-control:-ms-input-placeholder {
+  color: #fff;
+}
+
+#footer .newsletter-form .form-control.placeholder {
+  color: #fff;
+}
+
+#footer .newsletter-form .btn-sub {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 11px 24px 10px 25px;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+#footer .newsletter-form .btn-sub:hover {
+  background: #fff;
+}
+
+/*------------------------------------------------------------------
+23. Back Top / #back-top
+-------------------------------------------------------------------*/
+#back-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+  cursor: pointer;
+  float: right;
+  width: 50px;
+  height: 50px;
+  padding: 14px 0;
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+}
+
+#back-top.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*------------------------------------------------------------------
+24. Loader Holder / .loader-holder
+-------------------------------------------------------------------*/
+.loader-holder {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.loader-holder .block {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

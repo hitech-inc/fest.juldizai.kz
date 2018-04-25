@@ -1,0 +1,54 @@
+#nav ul a:hover,
+#nav ul .active,
+.header .title,
+.cta-sec .video:hover,
+.btn-primary:hover .icofont,
+.abt-holder .tabset a:hover,
+.abt-holder .tabset .active,
+#footer .contact-list .icofont,
+.schedule-sec .time-tab a:hover,
+.schedule-sec .time-tab .active,
+#footer .contact-list a:hover,
+.banner .video-icon .icofont:hover,
+.abt-holder .topic-list li:hover .icon,
+#footer .newsletter-form .btn-sub:hover,
+.schedule-sec .content2 .txt-list a:hover,
+.register-sec .register-form .col:hover label,
+.register-sec .register-form .form-control:focus,
+.speaker-sec .speaker-slider .slick-prev:hover:before,
+.speaker-sec .speaker-slider .slick-next:hover:before,
+.speaker-sec .speaker-slider .speaker-col:hover h4 a {
+  color: #ef4836; }
+
+#back-top,
+#header .nav-opener,
+.btn-primary:hover,
+.btn-primary .icofont,
+.info-holder .col,
+.main-slider .slick-prev:hover,
+.main-slider .slick-next:hover,
+#footer .newsletter-form .btn-sub,
+.schedule-sec .schedule-tab a:hover,
+.schedule-sec .schedule-tab .active,
+.abt-holder .abt-slider .slick-prev:hover,
+.abt-holder .abt-slider .slick-next:hover,
+.price-sec .price-holder .btn-primary:hover,
+.price-sec .price-holder .price-heading .price,
+.register-sec .register-form .btn-primary:hover,
+.speaker-sec .speaker-slider .speaker-col:hover:before,
+.speaker-sec .speaker-slider .speaker-col:hover .txt-holder:after {
+  background: #ef4836; }
+
+.btn-primary:hover,
+.abt-holder .tabset .active,
+.schedule-sec .time-tab a:hover,
+.schedule-sec .time-tab .active,
+.register-sec .register-form .col:hover,
+.register-sec .register-form .col:focus,
+.abt-holder .topic-list li:hover .icon,
+.speaker-sec .speaker-slider .slick-prev:hover,
+.speaker-sec .speaker-slider .slick-next:hover {
+  border-color: #ef4836; }
+
+.schedule-sec .schedule-tab a:before {
+  border-color: transparent transparent transparent #ef4836; }

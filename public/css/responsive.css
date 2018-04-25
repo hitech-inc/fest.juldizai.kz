@@ -1,0 +1,308 @@
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.ellipsis {
+  white-space: nowrap;
+  /* 1 */
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  /* 2 */
+  overflow: hidden; }
+
+@media (max-width: 1600px) {
+  body.boxed-v #wrapper {
+    max-width: 95%; } }
+
+@media (max-width: 1500px) {
+  body.boxed-v #wrapper {
+    max-width: 100%; } }
+
+@media (min-width: 1024px) {
+  #header .nav-opener {
+    display: none; } }
+
+@media (max-width: 1199px) {
+  .info-holder .col {
+    padding: 26px 20px 30px 20px; }
+  .info-holder .icofont {
+    margin: 0 6px 0 0; }
+  .cta-sec br {
+    display: none; }
+  .schedule-sec .schedule-tab {
+    width: 23%;
+    padding: 0 35px 0 0; }
+  .schedule-sec .tab-content {
+    width: 77%;
+    padding: 26px 18px 21px; }
+  .gallery-holder .grid-item.item1 {
+    width: 232px; }
+  .gallery-holder .grid-item.item2 {
+    width: 467px; }
+  .gallery-holder .grid-item.item3 {
+    width: 322px; }
+  .gallery-holder .grid-item.item4 {
+    width: 192px; }
+  .gallery-holder .grid-item.item5 {
+    width: 184px; }
+  .price-sec .price-holder .price-heading .price {
+    padding: 15px 18px 17px 13px;
+    margin: 0 17px 0 0; }
+  .register-sec .register-form .col {
+    width: 18%; }
+  .register-sec .register-form .btn-primary {
+    padding: 5px 15px 5px 5px; }
+  .register-sec .register-form .jcf-select .jcf-select-text {
+    font-size: 9px;
+    margin: 0 20px 0 8px; } }
+
+@media (max-width: 1023px) {
+  #header {
+    padding: 30px 0 0; }
+    #header .nav-holder {
+      width: 32%; }
+  #nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 70px;
+    opacity: 0;
+    visibility: hidden;
+    margin: 0;
+    padding: 15px 15px 0;
+    background: #22313f;
+    -webkit-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
+    transition: all 0.25s linear; }
+    #nav ul li {
+      display: block;
+      margin: 0 0 20px; }
+      #nav ul li:first-child {
+        margin: 0 0 20px; }
+        .banner:after{ min-height: 720px; }
+  .info-holder .col {
+    text-align: center; }
+  .info-holder .icofont {
+    display: block;
+    margin: 0 0 5px; }
+  .info-holder .border {
+    display: block;
+    margin: 0 0 5px;
+    text-align: center; }
+  .info-holder .align-right {
+    padding: 0; }
+  .abt-holder {
+    padding-bottom: 30px; }
+  .speaker-sec {
+    padding-top: 70px;
+    padding-bottom: 70px; }
+    .speaker-sec .speaker-slider .txt-holder {
+      padding: 7px 0 0 17px; }
+    .speaker-sec .speaker-slider h4 {
+      font-size: 15px; }
+  .cta-sec .video-holder .arrow-img {
+    display: none; }
+  .schedule-sec {
+    padding-top: 70px; }
+    .schedule-sec .schedule-holder {
+      padding: 49px 46px 42px; }
+    .schedule-sec .schedule-tab {
+      width: 100%;
+      float: none;
+      padding: 0 0 35px; }
+      .schedule-sec .schedule-tab li {
+        float: left;
+        margin: 0 0 0 11px; }
+        .schedule-sec .schedule-tab li:first-child {
+          margin: 0; }
+      .schedule-sec .schedule-tab a:before {
+        top: auto;
+        bottom: -11px;
+        left: 50%;
+        right: auto;
+        border-width: 12px 10px 0 10px;
+        border-color: #007bff transparent transparent transparent;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%); }
+    .schedule-sec .tab-content {
+      width: 100%;
+      float: none; }
+  .register-sec {
+    padding: 70px 0; }
+    .register-sec .register-form .col {
+      width: 23.3%;
+      margin: 0 12px 15px 0; } }
+
+@media (max-width: 767px) {
+  #header .nav-holder {
+    width: 157px; }
+  #header .nav-opener {
+    margin: 0; }
+  #header .btn-primary {
+    padding: 8px 13px; }
+  .logo {
+    margin: 0 10px 0 0; }
+  #nav {
+    top: 58px; }
+  .banner:after,
+  .main-slider:after {
+    min-height: 640px; }
+  .banner.style2:after,
+  .main-slider.style2:after {
+    min-height: 900px; }
+  .banner.style2 .btn-primary,
+  .main-slider.style2 .btn-primary {
+    margin: 0 0 30px; }
+  .banner.style3:after,
+  .main-slider.style3:after {
+    min-height: 900px; }
+  .banner.style3 iframe,
+  .main-slider.style3 iframe {
+    margin: 0 0 30px; }
+  .banner .caption,
+  .main-slider .caption {
+    font-size: 18px;
+    line-height: 25px;
+    padding: 0 0 80px; }
+  .banner h1,
+  .main-slider h1 {
+    font-size: 30px;
+    line-height: 40px; }
+  .banner p,
+  .main-slider p {
+    margin: 0 0 40px; }
+  .banner .comming-timer,
+  .main-slider .comming-timer {
+    margin: 0 auto 20px; }
+  .banner .countdown-section,
+  .main-slider .countdown-section {
+    margin: 0 0 0 15px; }
+    .banner .countdown-section:first-child,
+    .main-slider .countdown-section:first-child {
+      margin: 0; }
+    .banner .countdown-section .countdown-amount,
+    .banner .countdown-section .countdown-period,
+    .main-slider .countdown-section .countdown-amount,
+    .main-slider .countdown-section .countdown-period {
+      font-size: 17px;
+      line-height: 24px; }
+  .banner .slick-prev,
+  .banner .slick-next,
+  .main-slider .slick-prev,
+  .main-slider .slick-next {
+    display: none !important; }
+  .main-slider .caption {
+    padding: 0; }
+    .info-holder{
+      width: 290px;
+      margin: -34px auto 0;
+    }
+  .info-holder .col {
+    text-align: left;
+    margin: 0 0 30px; }
+  .info-holder .icofont {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 11px 0 0; }
+  .info-holder .border {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0; }
+  .info-holder .align-right {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0 0 12px; }
+  .abt-holder {
+    padding-top: 30px;
+    padding-bottom: 50px; }
+    .abt-holder .holder {
+      width: 100%; }
+    .abt-holder .tabset {
+      font-size: 13px; }
+      .abt-holder .tabset a {
+        padding: 0 7px 12px; }
+    .abt-holder .btn-primary {
+      margin: 0 0 30px; }
+  .header {
+    margin: 0 0 40px; }
+  .speaker-sec {
+    padding-top: 50px;
+    padding-bottom: 40px; }
+    .speaker-sec .speaker-slider .slide .col {
+      width: 100%;
+      float: none;
+      padding: 0;
+      margin: 0 0 30px; }
+      .speaker-sec .speaker-slider .slide .col:nth-child(3) {
+        width: 100%; }
+    .speaker-sec .speaker-slider .slick-prev,
+    .speaker-sec .speaker-slider .slick-next {
+      display: none !important; }
+  .cta-sec {
+    padding: 50px 0; }
+    .cta-sec .video {
+      padding: 0; }
+    .cta-sec .btn-primary {
+      float: none; }
+  .schedule-sec {
+    padding-top: 50px;
+    padding-bottom: 0; }
+    .schedule-sec .schedule-holder {
+      padding: 20px; }
+    .schedule-sec .schedule-tab {
+      padding: 0 0 25px; }
+      .schedule-sec .schedule-tab li {
+        margin: 0 3px 10px 0; }
+        .schedule-sec .schedule-tab li:first-child {
+          margin: 0 3px 10px 0; }
+      .schedule-sec .schedule-tab .time {
+        font-size: 14px; }
+      .schedule-sec .schedule-tab a {
+        padding: 11px 8px 14px; }
+        .schedule-sec .schedule-tab a:before {
+          display: none; }
+    .schedule-sec .time-tab {
+      width: 210px;
+      margin: 0 auto 20px;
+      text-align: center; }
+      .schedule-sec .time-tab li {
+        width: 100%;
+        margin: 0 0 10px;
+        float: none; }
+    .schedule-sec .content2 .img-holder {
+      width: 100%;
+      float: none;
+      margin: 0 0 20px; }
+    .schedule-sec .content2 .txt-holder {
+      width: 100%;
+      float: none;
+      padding: 0; }
+  .gallery-holder {
+    padding-bottom: 30px; }
+    .gallery-holder .grid-item.item1, .gallery-holder .grid-item.item2, .gallery-holder .grid-item.item3, .gallery-holder .grid-item.item4, .gallery-holder .grid-item.item5 {
+      width: 100%;
+      float: none; }
+    .gallery-holder .grid-item img {
+      width: 100%; }
+  .price-sec {
+    padding-top: 30px;
+    padding-bottom: 20px; }
+    .price-sec .header {
+      margin: 0 0 30px; }
+  .register-sec {
+    padding: 50px 0; }
+    .register-sec .register-form .col {
+      width: 100%;
+      float: none;
+      margin: 0 0 15px; }
+  #footer .footer-area {
+    padding-top: 50px;
+    padding-bottom: 30px; }
+  #footer .contact-list li {
+    margin: 0 15px 0 0; }
+  #footer .contact-list .icofont {
+    margin: 0 12px 0 0; }
+  #footer .newsletter-form {
+    width: 100%; } }
