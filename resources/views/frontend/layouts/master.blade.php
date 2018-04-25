@@ -16,7 +16,9 @@
 	<link rel="stylesheet" href="/css/bootstrap.css">
 	<link rel="stylesheet" href="/css/plugins.css">
 	<link rel="stylesheet" href="/css/icofont.css">
+	<link rel="stylesheet" href="/css/DINPROFont.css">
 	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/mystyle.css">
 	<link rel="stylesheet" href="/css/colors.css">
 	<link rel="stylesheet" href="/css/responsive.css">
 </head>
@@ -46,7 +48,7 @@
 	<script src="/js/jquery.js"></script>
 	<script src="/js/plugins.js"></script>
 	<script src="/js/jquery.main.js"></script>
-	
+
 	<div id="style-changer" data-src="style-changer.html"></div>
 </body>
 </html>

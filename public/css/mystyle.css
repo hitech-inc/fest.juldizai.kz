@@ -1,0 +1,98 @@
+.css-tabs-wrapper {
+	max-width: 700px;
+}
+.css-tabs-wrapper > input {
+	display: none;
+}
+.css-tabs-wrapper > label {
+	display: block;
+	float: left;
+	cursor: pointer;
+	padding: 3px 18px;
+    display: block;
+    color: #acacac;
+    border-width: 0 0 3px;
+    border-style: solid;
+    border-color: #e8e8e8;
+    -webkit-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+    text-transform: uppercase;
+}
+
+.css-tabs-wrapper > input:checked + label {
+	border-color: #ef4836;
+	color: #ef4836;
+}
+.tabs {
+	clear: both;
+	width: 100%;
+	min-height: 350px;
+}
+.tabs > div {
+	display: none;
+	opacity: 0;
+	max-width: 100%;
+	padding: 10px 0;
+	padding-top: 20px;
+	transform: rotateX(-25deg);
+	transform-origin: top center;
+}
+#tab-nav-1:checked ~ .tabs > div:nth-of-type(1),
+#tab-nav-2:checked ~ .tabs > div:nth-of-type(2),
+#tab-nav-3:checked ~ .tabs > div:nth-of-type(3),
+#tab-nav-4:checked ~ .tabs > div:nth-of-type(4){
+	opacity: 1;
+	z-index: 1;
+	transform: rotateX(0deg);
+	display: block;
+}
+
+
+
+/****************************/
+
+.gallery-holder {
+	min-height: 560px;
+}
+
+
+
+svg {
+  width: 200px;
+  height: 150px;
+  cursor: pointer;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+path {
+  fill: none;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  -moz-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  -o-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  -ms-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  stroke-width: 40px;
+  stroke-linecap: round;
+  stroke: #a06ba5;
+  stroke-dashoffset: 0px;
+}
+path#top,
+path#bottom {
+  stroke-dasharray: 240px 950px;
+}
+path#middle {
+  stroke-dasharray: 240px 240px;
+}
+.cross path#top,
+.cross path#bottom {
+  stroke-dashoffset: -650px;
+  stroke-dashoffset: -650px;
+}
+.cross path#middle {
+  stroke-dashoffset: -115px;
+  stroke-dasharray: 1px 220px;
+}
