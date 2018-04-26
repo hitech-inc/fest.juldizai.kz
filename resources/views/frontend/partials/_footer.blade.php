@@ -7,8 +7,8 @@
       <p>Есть вопросы?</p>
       <p>Звоните прямо сейчас</p>
       <ul class="list-unstyled contact-list">
-        <li><i class="icofont icofont-phone"></i> <a href="tel:0213452148">8 (7172) 57 94 14</a></li>
-        <li><i class="icofont icofont-email"></i> <a href="mail:support@exo.com;">zhuldizai@bi-group.kz</a></li>
+        <li><i class="icofont icofont-phone"></i> <a href="tel:0213452148">{{ $phone->text }}</a></li>
+        <li><i class="icofont icofont-email"></i> <a href="mail:support@exo.com;">{{ $email->text }}</a></li>
       </ul>
       <p>© Copyright 2018, Zhuldizai <br>Все права защищены</p>
     </div>

@@ -3,7 +3,7 @@
         <tr>
             <th>Title</th>
         <th>Text</th>
-        <th>Theme Id</th>
+        <th>Тема</th>
             <th colspan="3">Action</th>
         </tr>
     </thead>

@@ -48,53 +48,29 @@
             <div class="tabs">
               <div>
                 <ul class="list-unstyled topic-list">
+                  @foreach($text_block1 as $block)
                   <li>
                     <span class="icon text-center md-round"><i class="icofont icofont-ui-note"></i></span>
                     <div class="txt-holder">
                       <h2 class="heading text-uppercase"></h2>
-                      <p>11 марта 2014 года на востоке нашей страны – в Усть-Каменогорске стартовал первый отборочный тур ежегодного Республиканского фестиваля детского творчества для детей с ограниченными возможностями «Жұлдызай»</p>
+                      <p>{{ $block->text }}</p>
                     </div>
                   </li>
-                  <li>
-                    <span class="icon text-center md-round"><i class="icofont icofont-fountain-pen"></i></span>
-                    <div class="txt-holder">
-                      <h2 class="heading text-uppercase"></h2>
-                      <p>С 2005 года наш корпоративный благотворительный фонд проводит республиканский фестиваль детского творчества «Жұлдызай», который ежегодно объединяет более 5000 детей.</p>
-                    </div>
-                  </li>
-                  <li>
-                    <span class="icon text-center md-round"><i class="icofont icofont-social-envato"></i></span>
-                    <div class="txt-holder">
-                      <h2 class="heading text-uppercase"></h2>
-                      <p>Основная цель фестиваля «Жұлдызай» — творческая социализация детей с ограниченными возможностями.</p>
-                    </div>
-                  </li>
+                  @endforeach
                 </ul>
               </div>
               <div>
-                <ul class="list-unstyled topic-list">
-                                <li>
-                                  <span class="icon text-center md-round"><i class="icofont icofont-fountain-pen"></i></span>
-                                  <div class="txt-holder">
-                                    <h2 class="heading text-uppercase">Первый этап отборочный</h2>
-                                    <p>Организаторы объезжаю все 16 городов Казахстана – Алматы, Талдыкорган, Кызылорда, Тараз, Шымкент, Атырау, Актау, Актобе, Уральск, Оскемен, Костанай, Павлодар, Петропавловск, Кокшетау, Караганда, Астана, и отбирают талантливых детишек на второй тур.</p>
-                                  </div>
-                                                        </li>
-                                                        <li>
-                                  <span class="icon text-center md-round"><i class="icofont icofont-ui-note"></i></span>
-                                  <div class="txt-holder">
-                                    <h2 class="heading text-uppercase">Второй тур</h2>
-                                    <p>По результатом первого отборочного тура 300 детей, прошедших во второй этап, приглашаются в г.Астана, где помимо участия в конкурсе, они на протяжении недели отдыхают и получают массу удовольствий, от проведенных внутри фестиваля мероприятий, таких как: жеребьевка, дискотеки, экскурсии по любимой столице.</p>
-                                  </div>
-                                                        </li>
-                                                        <li>
-                                  <span class="icon text-center md-round"><i class="icofont icofont-social-envato"></i></span>
-                                  <div class="txt-holder">
-                                    <h2 class="heading text-uppercase">Финал</h2>
-                                    <p>Уже, как правило, каждый год 1 июня фестиваль заканчивается в преддверии праздника «День защиты детей» фееричным гала-концертом.Красочное шоу, номера с нашими талантливыми конкурсантами и звездами казахстанской и зарубежной эстрады, никого не оставляют равнодушными.</p>
-                                  </div>
-                                                        </li>
-                                                      </ul>
+              <ul class="list-unstyled topic-list">
+                  @foreach($text_block2 as $block)
+                  <li>
+                    <span class="icon text-center md-round"><i class="icofont icofont-ui-note"></i></span>
+                    <div class="txt-holder">
+                      <h2 class="heading text-uppercase">{{ $block->title }}</h2>
+                      <p>{{ $block->text }}</p>
+                    </div>
+                  </li>
+                  @endforeach
+                </ul>
               </div>
             </div>
           </div>
@@ -377,8 +353,8 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-5">
-          <span class="title">Хотите узнать больше о нас?</span>
-          <p>На фоне резких контрастов, сложившихся в обществе, нельзя быть равнодушными к другим людям, ведь все мы живем в обществе, а это значит, что нужно не только брать, но и жертвовать, только тогда наше общество будет полноценным.</p>
+          <span class="title">{{ $text_block3->title }}</span>
+          <p>{{ $text_block3->text }}</p>
         </div>
         <div class="col-xs-12 col-sm-3 col-md-4 col-lg-5" style="float: right;">
           <div class="video-holder text-center text-uppercase">
