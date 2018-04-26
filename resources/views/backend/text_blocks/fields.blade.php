@@ -10,6 +10,12 @@
     {!! Form::text('desc', null, ['class' => 'form-control']) !!}
 </div>
 
+<!-- ICON Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('icon', 'Icon class:') !!}
+    {!! Form::text('icon', null, ['class' => 'form-control']) !!}
+</div>
+
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
     {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}

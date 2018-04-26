@@ -26,3 +26,33 @@ Route::patch('backend/textBlocks/{textBlocks}', ['as'=> 'backend.textBlocks.upda
 Route::delete('backend/textBlocks/{textBlocks}', ['as'=> 'backend.textBlocks.destroy', 'uses' => 'Backend\TextBlockController@destroy']);
 Route::get('backend/textBlocks/{textBlocks}', ['as'=> 'backend.textBlocks.show', 'uses' => 'Backend\TextBlockController@show']);
 Route::get('backend/textBlocks/{textBlocks}/edit', ['as'=> 'backend.textBlocks.edit', 'uses' => 'Backend\TextBlockController@edit']);
+
+
+Route::get('backend/blocks', ['as'=> 'backend.blocks.index', 'uses' => 'Backend\BlockController@index']);
+Route::post('backend/blocks', ['as'=> 'backend.blocks.store', 'uses' => 'Backend\BlockController@store']);
+Route::get('backend/blocks/create', ['as'=> 'backend.blocks.create', 'uses' => 'Backend\BlockController@create']);
+Route::put('backend/blocks/{blocks}', ['as'=> 'backend.blocks.update', 'uses' => 'Backend\BlockController@update']);
+Route::patch('backend/blocks/{blocks}', ['as'=> 'backend.blocks.update', 'uses' => 'Backend\BlockController@update']);
+Route::delete('backend/blocks/{blocks}', ['as'=> 'backend.blocks.destroy', 'uses' => 'Backend\BlockController@destroy']);
+Route::get('backend/blocks/{blocks}', ['as'=> 'backend.blocks.show', 'uses' => 'Backend\BlockController@show']);
+Route::get('backend/blocks/{blocks}/edit', ['as'=> 'backend.blocks.edit', 'uses' => 'Backend\BlockController@edit']);
+
+
+Route::get('backend/blocks', ['as'=> 'backend.blocks.index', 'uses' => 'Backend\BlockController@index']);
+Route::post('backend/blocks', ['as'=> 'backend.blocks.store', 'uses' => 'Backend\BlockController@store']);
+Route::get('backend/blocks/create', ['as'=> 'backend.blocks.create', 'uses' => 'Backend\BlockController@create']);
+Route::put('backend/blocks/{blocks}', ['as'=> 'backend.blocks.update', 'uses' => 'Backend\BlockController@update']);
+Route::patch('backend/blocks/{blocks}', ['as'=> 'backend.blocks.update', 'uses' => 'Backend\BlockController@update']);
+Route::delete('backend/blocks/{blocks}', ['as'=> 'backend.blocks.destroy', 'uses' => 'Backend\BlockController@destroy']);
+Route::get('backend/blocks/{blocks}', ['as'=> 'backend.blocks.show', 'uses' => 'Backend\BlockController@show']);
+Route::get('backend/blocks/{blocks}/edit', ['as'=> 'backend.blocks.edit', 'uses' => 'Backend\BlockController@edit']);
+
+
+Route::get('backend/blocks', ['as'=> 'backend.blocks.index', 'uses' => 'Backend\BlockController@index']);
+Route::post('backend/blocks', ['as'=> 'backend.blocks.store', 'uses' => 'Backend\BlockController@store']);
+Route::get('backend/blocks/create', ['as'=> 'backend.blocks.create', 'uses' => 'Backend\BlockController@create']);
+Route::put('backend/blocks/{blocks}', ['as'=> 'backend.blocks.update', 'uses' => 'Backend\BlockController@update']);
+Route::patch('backend/blocks/{blocks}', ['as'=> 'backend.blocks.update', 'uses' => 'Backend\BlockController@update']);
+Route::delete('backend/blocks/{blocks}', ['as'=> 'backend.blocks.destroy', 'uses' => 'Backend\BlockController@destroy']);
+Route::get('backend/blocks/{blocks}', ['as'=> 'backend.blocks.show', 'uses' => 'Backend\BlockController@show']);
+Route::get('backend/blocks/{blocks}/edit', ['as'=> 'backend.blocks.edit', 'uses' => 'Backend\BlockController@edit']);

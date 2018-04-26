@@ -16,46 +16,19 @@
 
 <div class="info-holder container">
   <div class="row">
+
+    @foreach($red_blocks as $block)
     <div class="col-xs-12 col-sm-3">
       <div class="col md-round">
-        <span class="icofont icofont-clock-time"></span>
+        <span class="icofont {{ $block->icon }}"></span>
         <span class="border">/</span>
         <div class="align-right">
-          <strong class="text-uppercase">Дата</strong>
-          <time datetime="2017-03-02 20:00" class="date">12 июля 2018 года</time>
+          <strong class="text-uppercase">{{ $block->title }}</strong>
+          <time datetime="2017-03-02 20:00" class="date">{{ $block->desc }}</time>
         </div>
       </div>
     </div>
-    <div class="col-xs-12 col-sm-3">
-      <div class="col md-round">
-        <span class="icofont icofont-location-pin"></span>
-        <span class="border">/</span>
-        <div class="align-right">
-          <strong class="text-uppercase">Место</strong>
-          <address class="address">Мега,Шымкент</address>
-        </div>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-3">
-      <div class="col md-round">
-        <span class="icofont icofont-chair"></span>
-        <span class="border">/</span>
-        <div class="align-right">
-          <strong class="text-uppercase">Количество</strong>
-          <span class="date">60 человек</span>
-        </div>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-3">
-      <div class="col md-round">
-        <span class="icofont icofont-record"></span>
-        <span class="border">/</span>
-        <div class="align-right">
-          <strong class="text-uppercase">Ведущий</strong>
-          <span class="date">12 Специалист</span>
-        </div>
-      </div>
-    </div>
+    @endforeach
   </div>
 </div>
 

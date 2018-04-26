@@ -3,6 +3,7 @@
         <tr>
             <th>Title</th>
         <th>Desc</th>
+        <th>Icon</th>
             <th colspan="3">Action</th>
         </tr>
     </thead>
@@ -11,12 +12,11 @@
         <tr>
             <td>{!! $textBlock->title !!}</td>
             <td>{!! $textBlock->desc !!}</td>
+            <td>{!! $textBlock->icon !!}</td>
             <td>
                 {!! Form::open(['route' => ['backend.textBlocks.destroy', $textBlock->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>
-                    <a href="{!! route('backend.textBlocks.show', [$textBlock->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
                     <a href="{!! route('backend.textBlocks.edit', [$textBlock->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
-                    {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
                 </div>
                 {!! Form::close() !!}
             </td>

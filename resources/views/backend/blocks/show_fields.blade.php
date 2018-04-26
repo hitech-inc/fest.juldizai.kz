@@ -1,36 +1,36 @@
 <!-- Id Field -->
 <div class="form-group">
     {!! Form::label('id', 'Id:') !!}
-    <p>{!! $textBlock->id !!}</p>
+    <p>{!! $block->id !!}</p>
 </div>
 
 <!-- Title Field -->
 <div class="form-group">
     {!! Form::label('title', 'Title:') !!}
-    <p>{!! $textBlock->title !!}</p>
+    <p>{!! $block->title !!}</p>
 </div>
 
-<!-- Desc Field -->
+<!-- Text Field -->
 <div class="form-group">
-    {!! Form::label('desc', 'Desc:') !!}
-    <p>{!! $textBlock->desc !!}</p>
+    {!! Form::label('text', 'Text:') !!}
+    <p>{!! $block->text !!}</p>
 </div>
 
-<!-- Icon Field -->
+<!-- Theme Id Field -->
 <div class="form-group">
-    {!! Form::label('icon', 'Icon:') !!}
-    <p>{!! $textBlock->icon !!}</p>
+    {!! Form::label('theme_id', 'Theme Id:') !!}
+    <p>{!! $block->theme_id !!}</p>
 </div>
 
 <!-- Created At Field -->
 <div class="form-group">
     {!! Form::label('created_at', 'Created At:') !!}
-    <p>{!! $textBlock->created_at !!}</p>
+    <p>{!! $block->created_at !!}</p>
 </div>
 
 <!-- Updated At Field -->
 <div class="form-group">
     {!! Form::label('updated_at', 'Updated At:') !!}
-    <p>{!! $textBlock->updated_at !!}</p>
+    <p>{!! $block->updated_at !!}</p>
 </div>
 

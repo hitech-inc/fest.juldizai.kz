@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateTextBlocksTable extends Migration
+class CreateBlocksTable extends Migration
 {
 
     /**
@@ -13,10 +13,11 @@ class CreateTextBlocksTable extends Migration
      */
     public function up()
     {
-        Schema::create('text_blocks', function (Blueprint $table) {
+        Schema::create('blocks', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title');
-            $table->string('desc');
+            $table->string('title')->nullable();
+            $table->text('text');
+            $table->integer('theme_id')->unsigned();
             $table->timestamps();
             $table->softDeletes();
         });
@@ -29,6 +30,6 @@ class CreateTextBlocksTable extends Migration
      */
     public function down()
     {
-        Schema::drop('text_blocks');
+        Schema::drop('blocks');
     }
 }

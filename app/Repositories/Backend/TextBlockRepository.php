@@ -21,7 +21,8 @@ class TextBlockRepository extends BaseRepository
      */
     protected $fieldSearchable = [
         'title',
-        'desc'
+        'desc',
+        'icon'
     ];
 
     /**

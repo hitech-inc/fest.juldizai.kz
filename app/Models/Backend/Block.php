@@ -6,18 +6,19 @@ use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
- * Class TextBlock
+ * Class Block
  * @package App\Models\Backend
- * @version April 26, 2018, 6:48 am UTC
+ * @version April 26, 2018, 6:58 am UTC
  *
  * @property string title
- * @property string desc
+ * @property string text
+ * @property integer theme_id
  */
-class TextBlock extends Model
+class Block extends Model
 {
     use SoftDeletes;
 
-    public $table = 'text_blocks';
+    public $table = 'blocks';
     
 
     protected $dates = ['deleted_at'];
@@ -25,8 +26,8 @@ class TextBlock extends Model
 
     public $fillable = [
         'title',
-        'desc',
-        'icon'
+        'text',
+        'theme_id'
     ];
 
     /**
@@ -36,8 +37,8 @@ class TextBlock extends Model
      */
     protected $casts = [
         'title' => 'string',
-        'desc' => 'string',
-        'icon' => 'string'
+        'text' => 'string',
+        'theme_id' => 'integer'
     ];
 
     /**
@@ -46,9 +47,8 @@ class TextBlock extends Model
      * @var array
      */
     public static $rules = [
-        'title' => 'required',
-        'desc' => 'required',
-        'icon' => 'required'
+        'text' => 'required',
+        'theme_id' => 'required'
     ];
 
     
