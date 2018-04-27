@@ -731,44 +731,68 @@
       <div class="col-xs-12">
         <!-- gallery holder of the page -->
         <div class="gallery-holder js-masonry">
-          <div class="holder">
-            <!-- grid item of the page -->
-                  <div class="grid-item item1 overlay">
-                    <img src="images/_sMG_5713.jpg" alt="image description" width="292" height="463" class="img-responsive">
-                    <a href="images/_sMG_5713.jpg" class="icon icofont icofont-plus lightbox" data-fancybox="gallery"></a>
-                  </div>
-                  <!-- grid item of the page end -->
-                  <!-- grid item of the page -->
-                  <div class="grid-item item1 overlay">
-                    <img src="images/img13-2.jpg" alt="image description" class="img-responsive">
-                    <a href="images/img13-2.jpg" class="icon icofont icofont-plus lightbox" data-fancybox="gallery"></a>
-                  </div>
-                  <!-- grid item of the page end -->
-                  <!-- grid item of the page -->
-                  <div class="grid-item item2 overlay">
-                    <img src="images/img14-2.jpg" alt="image description" class="img-responsive">
-                    <a href="images/img14-2.jpg" class="icon icofont icofont-plus lightbox" data-fancybox="gallery"></a>
-                  </div>
-                  <!-- grid item of the page end -->
-                  <!-- grid item of the page -->
-                  <div class="grid-item item3 overlay">
-                    <img src="images/img15-2.jpg" alt="image description" class="img-responsive">
-                    <a href="images/img15-2.jpg" class="icon icofont icofont-plus lightbox" data-fancybox="gallery"></a>
-                  </div>
-                  <!-- grid item of the page end -->
-                  <!-- grid item of the page -->
-                  <div class="grid-item item4 overlay">
-                    <img src="images/img16-2.jpg" alt="image description" class="img-responsive">
-                    <a href="images/img16-2.jpg" class="icon icofont icofont-plus lightbox" data-fancybox="gallery"></a>
-                  </div>
-                  <!-- grid item of the page end -->
-                  <!-- grid item of the page -->
-                  <div class="grid-item item5 overlay">
-                    <img src="images/img17-2.jpg" alt="image description" class="img-responsive">
-                    <a href="images/img17-2.jpg" class="icon icofont icofont-plus lightbox" data-fancybox="gallery"></a>
-                  </div>
-            <!-- grid item of the page end -->
-          </div>
+            @foreach($gallery as $item)
+              @if($loop->index < 7)
+                <div class="grid-item overlay" style="background-image: url('img/uploads/{{ $item->path }}');">
+                    <a href="img/uploads/{{ $item->path }}" class="icon icofont icofont-plus lightbox" data-fancybox="gallery"></a>
+                </div>
+              @endif
+              @if($loop->index == 7)
+                <div class="grid-item overlay" style="background-image: url('img/uploads/{{ $item->path }}');">
+                    <a href="img/uploads/{{ $item->path }}" class="icon icofont icofont-plus lightbox" data-fancybox="gallery"></a>
+                </div>
+              @endif
+              @if($loop->index  > 7)
+                    <a href="img/uploads/{{ $item->path }}" class="icon icofont icofont-plus lightbox" data-fancybox="gallery"></a> 
+              @endif
+            @endforeach
+        </div>
+
+
+
+
+
+       <!--    <div class="holder">
+         grid item of the page
+       
+       
+               <div class="grid-item item1 overlay">
+                 <img src="images/_sMG_5713.jpg" alt="image description" width="292" height="463" class="img-responsive">
+                 <a href="images/_sMG_5713.jpg" class="icon icofont icofont-plus lightbox" data-fancybox="gallery"></a>
+               </div>
+               grid item of the page end
+               grid item of the page
+               <div class="grid-item item1 overlay">
+                 <img src="images/img13-2.jpg" alt="image description" class="img-responsive">
+                 <a href="images/img13-2.jpg" class="icon icofont icofont-plus lightbox" data-fancybox="gallery"></a>
+                 <a href="images/img13-2.jpg" class="icon icofont icofont-plus lightbox" data-fancybox="gallery"></a>
+               </div>
+               grid item of the page end
+               grid item of the page
+               <div class="grid-item item2 overlay">
+                 <img src="images/img14-2.jpg" alt="image description" class="img-responsive">
+                 <a href="images/img14-2.jpg" class="icon icofont icofont-plus lightbox" data-fancybox="gallery"></a>
+               </div>
+               grid item of the page end
+               grid item of the page
+               <div class="grid-item item3 overlay">
+                 <img src="images/img15-2.jpg" alt="image description" class="img-responsive">
+                 <a href="images/img15-2.jpg" class="icon icofont icofont-plus lightbox" data-fancybox="gallery"></a>
+               </div>
+               grid item of the page end
+               grid item of the page
+               <div class="grid-item item4 overlay">
+                 <img src="images/img16-2.jpg" alt="image description" class="img-responsive">
+                 <a href="images/img16-2.jpg" class="icon icofont icofont-plus lightbox" data-fancybox="gallery"></a>
+               </div>
+               grid item of the page end
+               grid item of the page
+               <div class="grid-item item5 overlay">
+                 <img src="images/img17-2.jpg" alt="image description" class="img-responsive">
+                 <a href="images/img17-2.jpg" class="icon icofont icofont-plus lightbox" data-fancybox="gallery"></a>
+               </div>
+         grid item of the page end
+       </div> -->
         </div>
         <!-- gallery holder of the page end -->
       </div>

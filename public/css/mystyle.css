@@ -53,8 +53,7 @@
 /****************************/
 
 .gallery-holder {
-	min-height: 560px;
-}
+	min-height: 500px;}
 
 
 
@@ -95,4 +94,24 @@ path#middle {
 .cross path#middle {
   stroke-dashoffset: -115px;
   stroke-dasharray: 1px 220px;
+}
+
+
+
+.grid-item {
+  width: 25%;
+  height: 50%;
+  display: inline-block;
+  background-size: cover;
+}
+
+.gallery-holder {
+  width: 100%;
+  padding: 0;
+}
+
+.grid-item {
+  width: 25%;
+  height: 50%;
+  background-position: center center;
 }

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Backend\Block;
 use App\Models\Backend\TextBlock;
+use App\Models\Backend\Photo;
 
 class FrontendController extends Controller
 {
@@ -17,6 +18,7 @@ class FrontendController extends Controller
     	$text_block3 = Block::where('theme_id','3')->first();
     	$phone = Block::where('theme_id','4')->first();
     	$email = Block::where('theme_id','5')->first();
-    	return view('frontend.index',compact('red_blocks','text_block1','text_block2','text_block3','phone','email'));
+    	$gallery = Photo::where('alt','gallery-photos')->get();
+    	return view('frontend.index',compact('red_blocks','text_block1','text_block2','text_block3','phone','email','gallery'));
     }
 }
