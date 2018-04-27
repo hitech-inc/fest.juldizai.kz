@@ -84,7 +84,7 @@ class PhotoController extends AppBaseController
         }
         $photo = Photo::where('id',$id)->first();
         $this->photoRepository->delete($id);
-        unlink(public_path('img\uploads\\'.$photo['path']));
+        unlink(public_path('img/uploads/'.$photo['path']));
         Flash::success('Photo deleted successfully.');
 
 
