@@ -6,10 +6,10 @@
     <!-- <div id="defaultCountdown" class="comming-timer"></div> -->
     <h1 class="text-uppercase">Фестиваль «Жұлдызай»</h1>
     <p>Экономия бюджета до 30%, за счет собственного продюсерского центра и отдела по оформлению; закупа напитков у производителя и услуг артистов без переплаты</p>
-    <span class="video-icon text-uppercase text-center">
-      <a href="" class="icofont icofont-play-alt-2"></a>
-      Смотрите Наши новые видео
-    </span>
+<!--     <span class="video-icon text-uppercase text-center">
+  <a href="" class="icofont icofont-play-alt-2"></a>
+  Смотрите Наши новые видео
+</span> -->
   </div>
 </section>
 
