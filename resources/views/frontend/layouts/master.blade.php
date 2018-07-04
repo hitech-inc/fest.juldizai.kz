@@ -14,6 +14,8 @@
 	<title>Жулдызай ФЕСТИВАЛЬ | Организация мероприятий</title>
 	<link rel="stylesheet" href="/css/font-awesome.css">
 	<link rel="stylesheet" href="/css/bootstrap.css">
+	<link rel="stylesheet" href="/css/slick-theme.css">
+	<link rel="stylesheet" href="/css/slick.css">
 	<link rel="stylesheet" href="/css/plugins.css">
 	<link rel="stylesheet" href="/css/icofont.css">
 	<link rel="stylesheet" href="/css/DINPROFont.css">
@@ -48,6 +50,7 @@
 	<script src="/js/jquery.js"></script>
 	<script src="/js/plugins.js"></script>
 	<script src="/js/jquery.main.js"></script>
+	<script src="/js/slick.min.js"></script>
 <script>
 	$('.closeVideo').click(function() {
 		$('.smi').hide();
@@ -57,6 +60,41 @@
 		$('.smi').show();
 		$('body').css('overflow','hidden');
 	})
+</script>
+<script>
+	$('.test-slider').slick({
+		  dots: true,
+		  speed: 300,
+		  slidesToShow: 2,
+		  responsive: [
+		    {
+		      breakpoint: 1024,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 2,
+		        infinite: true,
+		        dots: true
+		      }
+		    },
+		    {
+		      breakpoint: 600,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+		      }
+		    }
+		    // You can unslick at a given breakpoint now by adding:
+		    // settings: "unslick"
+		    // instead of a settings object
+		  ]
+		});
 </script>
 	<div id="style-changer" data-src="style-changer.html"></div>
 </body>
