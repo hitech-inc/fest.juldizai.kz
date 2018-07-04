@@ -1717,3 +1717,7 @@ a:hover, a:focus, a.active {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+.fa-angle-up:before {
+    font-family: FontAwesome !important;
+}

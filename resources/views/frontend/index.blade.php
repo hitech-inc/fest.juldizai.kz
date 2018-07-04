@@ -39,10 +39,12 @@
           <div class="css-tabs-wrapper">
             <!-- Первая вкладка -->
             <input type="radio" name="tabs" id="tab-nav-1" checked>
-            <label for="tab-nav-1">О мероприятии</label>
+            <label for="tab-nav-1">О фестивале</label>
             <!-- Вторая вкладка -->
             <input type="radio" name="tabs" id="tab-nav-2">
-            <label for="tab-nav-2">Что вы узнаете</label>
+            <label for="tab-nav-2">Организация</label>
+            <input type="radio" name="tabs" id="tab-nav-3">
+            <label for="tab-nav-3">Результаты</label>
             <!-- Третья вкладка -->
 
             <div class="tabs">
@@ -72,6 +74,19 @@
                   @endforeach
                 </ul>
               </div>
+              <div>
+              <ul class="list-unstyled topic-list">
+                  @foreach($text_block22 as $block)
+                  <li>
+                    <span class="icon text-center md-round"><i class="icofont icofont-ui-note"></i></span>
+                    <div class="txt-holder">
+                      <h2 class="heading text-uppercase">{{ $block->title }}</h2>
+                      <p>{{ $block->text }}</p>
+                    </div>
+                  </li>
+                  @endforeach
+                </ul>
+              </div>
             </div>
           </div>
       </div>
@@ -89,8 +104,9 @@
   <section class="speaker-sec container">
     <div class="row">
       <header class="col-xs-12 header">
-        <span class="title">встреча с нашим ведущим</span>
-        <h3 class="heading2 text-uppercase">Опытные ведущие</h3>
+        <span class="title">Партнером фестиваля  является продюсерский центр   
+</span>
+        <h3 class="heading2 text-uppercase">«Zhan Alemi Group» </h3>
       </header>
     </div>
     <div class="row">
@@ -106,7 +122,7 @@
                   <a href=""><img src="images/img03.png" alt="image description" class="img-responsive"></a>
                 </div>
                 <div class="txt-holder">
-                  <h4 class="text-uppercase"><a href="">Jonathon Doe</a></h4>
+                  <h4 class="text-uppercase"><a href="">Жан Муканов</a></h4>
                   <span class="skill">UX Designer</span>
                   <strong class="topic">Topic:  Design for Human</strong>
                 </div>
@@ -118,7 +134,7 @@
                   <a href=""><img src="images/img06.png" alt="image description" class="img-responsive"></a>
                 </div>
                 <div class="txt-holder">
-                  <h4 class="text-uppercase"><a href="">Jennifer Jones</a></h4>
+                  <h4 class="text-uppercase"><a href="">Айдар Турганбек</a></h4>
                   <span class="skill">Project Manager</span>
                   <strong class="topic">Topic:  How to handle clients</strong>
                 </div>
@@ -358,7 +374,7 @@
         </div>
         <div class="col-xs-12 col-sm-3 col-md-4 col-lg-5" style="float: right;">
           <div class="video-holder text-center text-uppercase">
-            <a href="" class="video"><i class="icofont icofont-ui-play"></i>  Смотрите наши видео</a>
+            <a href="" class="video"><i class="icofont icofont-ui-play"></i>  Смотрите видео о нас</a>
             <div class="arrow-img" style="background-image: url(images/arrow.png);"></div>
           </div>
         </div>
