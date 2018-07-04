@@ -54,7 +54,7 @@
                   <li>
                     <span class="icon text-center md-round"><i class="icofont icofont-ui-note"></i></span>
                     <div class="txt-holder">
-                      <h2 class="heading text-uppercase"></h2>
+                      <h2 class="heading text-uppercase">{{ $block->title }}</h2>
                       <p>{{ $block->text }}</p>
                     </div>
                   </li>
