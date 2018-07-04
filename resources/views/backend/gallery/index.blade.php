@@ -11,7 +11,7 @@
 {{Form::open(['route' => 'gallery.upload', 'files' => true])}}
 
                     Выберите изображение:
-                    <input type="file" name="file" id="file">
+                    <input type="file"  multiple  name="file" id="file">
                     <input type="submit" value="Загрузить">
 
 {{ csrf_field() }}
