@@ -48,7 +48,16 @@
 	<script src="/js/jquery.js"></script>
 	<script src="/js/plugins.js"></script>
 	<script src="/js/jquery.main.js"></script>
-
+<script>
+	$('.closeVideo').click(function() {
+		$('.smi').hide();
+		$('body').css('overflow','auto');
+	})
+	$('.showVideo').click(function() {
+		$('.smi').show();
+		$('body').css('overflow','hidden');
+	})
+</script>
 	<div id="style-changer" data-src="style-changer.html"></div>
 </body>
 </html>
