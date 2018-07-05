@@ -692,13 +692,13 @@
   <div class="whiteBoard">
     <h3 style="color: #d22020;">СМИ о Фестивале</h3>
     <br>
-    <iframe width="100%" height="400px" src="https://www.youtube.com/embed/DiCK_0vu6mk?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin-left: 2.5%;"></iframe>
+    <iframe width="100%" height="400px" src="https://www.youtube.com/embed/DiCK_0vu6mk?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen ></iframe>
     <h4 style="font-size: 1.5em;">Областные СМИ про отборочные туры</h4>
     <p style="font-size: 1.2em;">Атырауда "Жұлдызай-2018" Республикалық фестивалінің 2-ші іріктеу кезеңі өтті. Мүмкіндігі шектеулі балалардың шығармаршалығын дамытуға бағытталған шараға 170-тен астам үміткер қатысты</p>
 
         <br><hr style="color: #cacaca;">
 
-    <iframe width="100%" height="400px" src="https://www.youtube.com/embed/ivZ1ryV1QMc?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin-left: 2.5%;"></iframe>
+    <iframe width="100%" height="400px" src="https://www.youtube.com/embed/ivZ1ryV1QMc?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen ></iframe>
     <h4 style="font-size: 1.5em;">Участники гала-концерта  были приглашены на передачу «Таңғы хабар»
 </h4>
     <p style="font-size: 1.2em;"> «Жұлдызай» фестивалінің гала концертінде кімдер өнер көрсетеді?
@@ -706,7 +706,7 @@
 
         <br><hr style="color: #cacaca;">
 
-     <iframe width="100%" height="400px" src="https://www.youtube.com/embed/_1W16lD3FwM?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin-left: 2.5%;"></iframe>
+     <iframe width="100%" height="400px" src="https://www.youtube.com/embed/_1W16lD3FwM?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen ></iframe>
     <h4 style="font-size: 1.5em;">Во время прямого эфира, интервью у зрителей
 </h4>
     <p style="font-size: 1.2em;">Астанада «Жұлдызай» республикалық фестивалінің гала-концерті өтеді
@@ -714,7 +714,7 @@
 
         <br><hr style="color: #cacaca;">
 
-    <iframe width="100%" height="400px" src="https://www.youtube.com/embed/L5C_ro7UqBM?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin-left: 2.5%;"></iframe>
+    <iframe width="100%" height="400px" src="https://www.youtube.com/embed/L5C_ro7UqBM?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen ></iframe>
     <h4 style="font-size: 1.5em;">Интервью организаторов фестиваля
 </h4>
     <p style="font-size: 1.2em;">Финальный гала-концерт фестиваля «Жулдызай» проходит в Астане
